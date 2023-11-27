@@ -1,0 +1,16 @@
+@import url("styles/heades.css");
+
+
+:root{
+    --cor-de-fundo: #ebecee;
+    margin: 0;
+    padding: 0;
+    --branco:#ffffff
+    
+
+
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}

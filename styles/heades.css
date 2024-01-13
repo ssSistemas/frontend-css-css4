@@ -12,17 +12,45 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 24px 19px 24px;
+    padding: 16px 24px 19px 0px;
 }
 
 .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    position: relative;
 }
 
 .container__imagem{
     padding: 1em;
 
 }
+
+.lista__menu{
+    top:100%;
+    position: absolute;
+    display: none;
+    
+}
+
+.lista__menu li{
+    background-color: var(--branco);
+    border-bottom: 1px solid var(--cinza);
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.container__botao:checked ~ .lista__menu{
+    display: block;
+}
+
+.container__botao{
+    display: none;
+}
+
+li:first-child{
+    color: blue
+}
+

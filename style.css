@@ -1,4 +1,5 @@
 @import url("styles/heades.css");
+@import url("styles/banner.css");
 
 
 :root {
@@ -8,6 +9,7 @@
     --branco: #ffffff;
     --laranja: #f25a70;
     --azul-degrade: linear-gradient(180deg, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);
+    
 }
 
 body {

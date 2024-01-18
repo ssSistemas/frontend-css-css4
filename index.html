@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
 
 </head>
@@ -44,6 +45,48 @@
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
         <input type="search" class="input__campo" placeholder="Qual será sua próxima leitura?">
     </section>
+    <section class="carrocel">
+        <h2 class="carrocel__titulo">Novos Lançamentos</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                    <div class="swiper-slide"><img src="imagens/livros/Angular.png" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/livros/Arquitetura.png" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/livros/Gestão2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/livros/Javascript.png" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/livros/Liderança.png" alt=""></div>
+                    <div class="swiper-slide"><img src="imagens/livros/Nodejs.png" alt=""></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+                const swiper = new Swiper('.swiper', {
+        // Optional parameters
+     
+        loop: true,
+        speed: 1000,
+        autoplay: {
+            delay: 1000,
+        },
+        spaceBetween: 5,
+        slidePerView: 4,
+
+        });
+    </script>
+
 </body>
 
 

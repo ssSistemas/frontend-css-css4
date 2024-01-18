@@ -1,6 +1,6 @@
 .border{
     box-sizing: border-box;
-    width: 95%;
+    width: 100%;
 }
 .banner{
     background: var(--azul-degrade);
@@ -22,15 +22,25 @@
     font-size: 1.2rem;
     font-weight: 400;
     padding: 1rem;
+    width: 95%;
    
 }
 
 .input__campo{
-    width: 80%;
+    color: var(--branco);
+    font-size: 1.2rem;
+    width: 100%;
     padding: 1rem;
-    margin: 1rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--cinza);
+    border-radius: 24px;
+    border-color: var(--cinza);
     text-align: center;
+    background-color: transparent;
 
+}
+
+.input__campo::placeholder{
+    color: var(--branco);
+    font-size: 1.2rem;
+    text-align: center;
+    background: url(../imagens/Lupa.svg) no-repeat;
 }

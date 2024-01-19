@@ -1,6 +1,7 @@
 @import url("styles/heades.css");
 @import url("styles/banner.css");
 @import url("styles/carrocel.css");
+@import url("styles/card.css");
 
 
 :root {
@@ -10,7 +11,7 @@
     --branco: #ffffff;
     --laranja: #f25a70;
     --azul-degrade: linear-gradient(195deg, #1e5799 5%, #2989d8 35%, #207cca 51%, #7db9e8 100%);
-    
+
 }
 
 body {

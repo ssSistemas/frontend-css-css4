@@ -1,0 +1,53 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--branco);
+    width: 95%;
+    margin: 20px 0 0 2.5%;
+    gap: 7px;
+    padding: 16px;
+    box-sizing: border-box;
+
+}
+
+
+
+.card__titulo {
+    font-family: poppins;
+    font-weight: 700;
+    size: 1.2rem;
+    color: orange;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+.card__subtitulo {
+
+    font-family: poppins;
+    font-weight: 700;
+    size: 1.5rem;
+    line-height: 27px;
+    margin-bottom: 9px;
+    text-align: center;
+}
+
+.card__texto {
+
+    font-family: poppins;
+    font-weight: 400;
+    size: 1.5rem;
+
+    margin-bottom: 70px;
+    line-height: 21px;
+}
+
+.card__botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+}
+
+.card__logo {
+    margin-bottom: 3.5rem;
+}

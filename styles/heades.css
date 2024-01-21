@@ -118,6 +118,14 @@ li a:hover {
         background: var(--azul-degrade);
     }
 
+    li #categorias a:hover {
+
+        .lista__menu {
+            display: block;
+        }
+
+    }
+
     #coracao {
         display: none;
     }

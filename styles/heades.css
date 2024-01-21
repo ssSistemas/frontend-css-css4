@@ -1,13 +1,13 @@
-.cabecalho__menu-hamburguer{
+.cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url("../imagens/Menu.svg") ;
+    background-image: url("../imagens/Menu.svg");
     display: inline-block;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.cabecalho{
+.cabecalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
@@ -15,26 +15,34 @@
     padding: 16px 24px 19px 0px;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 }
 
-.container__imagem{
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container__imagem {
     padding: 1em;
 
 }
 
-.lista__menu{
-    top:100%;
+.lista__menu {
+    top: 100%;
     position: absolute;
     display: none;
-    
+
 }
 
-.lista__menu li{
+.lista__menu li {
     background-color: var(--branco);
     border-bottom: 1px solid var(--cinza);
     padding: 1em;
@@ -42,15 +50,104 @@
     text-align: center;
 }
 
-.container__botao:checked ~ .lista__menu{
+.container__botao:checked~.lista__menu {
     display: block;
 }
 
-.container__botao{
+.container__botao {
     display: none;
 }
 
-li:first-child{
+li:first-child {
     color: blue
 }
 
+.menus_texto {
+    display: none;
+}
+
+#coracao {
+    display: block;
+}
+
+.container3 {
+    display: none;
+
+}
+
+li a:hover {
+    background: var(--azul-degrade);
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        display: none;
+    }
+
+    .cabecalho {
+
+        justify-content: flex-end;
+        gap: 5rem;
+
+    }
+
+    .menus_texto {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .menus__texto_item {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-direction: row-reverse;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+
+
+    li a:hover {
+        background: var(--azul-degrade);
+    }
+
+    #coracao {
+        display: none;
+    }
+
+    .container3 {
+        display: flex;
+        flex-grow: 2;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__titulo-negrito {
+        font-family: Josefin Sans;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    .container__titulo-normal {
+        font-family: Josefin Sans;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+
+
+
+}

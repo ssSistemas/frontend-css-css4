@@ -11,7 +11,7 @@
     --branco: #ffffff;
     --laranja: #f25a70;
     --azul-degrade: linear-gradient(195deg, #1e5799 5%, #2989d8 35%, #207cca 51%, #7db9e8 100%);
-
+    --font-secundaria: 'Josefin Sans', sans-serif;
 }
 
 body {
